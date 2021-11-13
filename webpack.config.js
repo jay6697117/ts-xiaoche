@@ -72,8 +72,9 @@ module.exports = {
   // 配置Webpack插件
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'TS项目',
+      title: '深入浅出TypeScript',
       filename: 'index.html',
+      favicon: path.resolve(rootDir, './public/favicon.ico'),
       template: path.resolve(rootDir, './public/index.html')
     })
   ],
