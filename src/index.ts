@@ -1,1 +1,1 @@
-require('./lesson/03.ts');
+console.log('1111')
