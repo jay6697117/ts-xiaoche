@@ -3542,10 +3542,10 @@ type-is@~1.6.17, type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript@3.9.2:
-  version "3.9.2"
-  resolved "https://registry.npmmirror.com/typescript/download/typescript-3.9.2.tgz?cache=0&sync_timestamp=1636529067193&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
-  integrity sha1-ZOnI6b5upYPFRgdnfdRoChzzXbk=
+typescript@4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npmmirror.com/typescript/download/typescript-4.4.2.tgz?cache=0&sync_timestamp=1636787861844&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
+  integrity sha1-bWGGQNQw41aaHftE99fmAM7T7oY=
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
