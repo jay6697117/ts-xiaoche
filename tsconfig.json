@@ -7,11 +7,11 @@
     "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。
     "sourceMap": true, // 把 ts 文件编译成 js 文件的时候，同时生成对应的 map 文件
     "esModuleInterop": true, // babel/plugin-transform-modules-commonjs必须
-    "noUnusedLocals": true,
+    "noUnusedLocals": false, // 已声明“a”，但从未读取其值。ts(6133)
     "strict": true, // 启用所有严格类型检查选项
     "noImplicitAny": true, // 在表达式和声明上有隐含的 any类型时报错
     "alwaysStrict": true, // 以严格模式检查模块，并在每个文件里加入 'use strict'
-    "declaration": true, // 生成相应的.d.ts文件
+    // "declaration": true, // 生成相应的.d.ts文件
     "removeComments": true, // 删除编译后的所有的注释
     "noImplicitReturns": true, // 不是函数的所有返回路径都有返回值时报错
     "importHelpers": true, // 从 tslib 导入辅助工具函数
