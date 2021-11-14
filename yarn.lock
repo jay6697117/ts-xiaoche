@@ -618,7 +618,7 @@
 
 "@babel/plugin-transform-modules-commonjs@^7.16.0":
   version "7.16.0"
-  resolved "https://registry.npmmirror.com/@babel/plugin-transform-modules-commonjs/download/@babel/plugin-transform-modules-commonjs-7.16.0.tgz?cache=0&sync_timestamp=1635567391003&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fplugin-transform-modules-commonjs%2Fdownload%2F%40babel%2Fplugin-transform-modules-commonjs-7.16.0.tgz#add58e638c8ddc4875bd9a9ecb5c594613f6c922"
+  resolved "https://registry.npmmirror.com/@babel/plugin-transform-modules-commonjs/download/@babel/plugin-transform-modules-commonjs-7.16.0.tgz?cache=0&sync_timestamp=1635566912532&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fplugin-transform-modules-commonjs%2Fdownload%2F%40babel%2Fplugin-transform-modules-commonjs-7.16.0.tgz#add58e638c8ddc4875bd9a9ecb5c594613f6c922"
   integrity sha1-rdWOY4yN3Eh1vZqey1xZRhP2ySI=
   dependencies:
     "@babel/helper-module-transforms" "^7.16.0"
