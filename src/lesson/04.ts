@@ -1,10 +1,7 @@
-function foo(): void {
-  console.log('hello');
-}
-foo();
-
-const a:void = undefined;
-// const b:void = null;
-// const c:void = 'hello';
+let a:undefined = undefined;
+let b:null = null;
+let c:unknown = undefined;
+let d:any = null;
+let e:void = undefined;
 
 export {};
