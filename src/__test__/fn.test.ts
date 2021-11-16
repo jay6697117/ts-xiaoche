@@ -1,4 +1,4 @@
-import { sum } from '../foo';
+import { sum } from '../fn';
 console.log(`sum:`, sum);
 
 test('basic', () => {
