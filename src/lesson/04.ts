@@ -4,6 +4,6 @@
 // let d:any = null;
 // let e:void = undefined;
 
-console.log('111')
+console.log('111');
 
 export {};

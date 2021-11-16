@@ -13,8 +13,8 @@ class Bar {
 const foo: Foo = new Foo(); // Okay.
 const bar: Bar = new Foo(); // Okay.
 
-console.log(`foo:`, foo)
-console.log(`bar:`, bar)
+console.log(`foo:`, foo);
+console.log(`bar:`, bar);
 
 const res1 = foo.fn('123');
 console.log(`res1:`, res1);
