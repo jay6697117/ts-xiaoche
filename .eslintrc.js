@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     // Overwrite rules specified from the extended configs e.g.
     '@typescript-eslint/explicit-function-return-type': 'off',
+    "@typescript-eslint/no-explicit-any": ["off"],
     "prefer-const":"off"
   },
 };
