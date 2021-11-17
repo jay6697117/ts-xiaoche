@@ -17,16 +17,16 @@
 
 // BigInt
 // const max = Number.MAX_SAFE_INTEGER;
-const max = BigInt(Number.MAX_SAFE_INTEGER);
-console.log(`max:`, max);
-const max1 = max + 1n;
-const max2 = max + 2n;
-console.log(`max1:`, max1);
-console.log(`max2:`, max2);
-console.log(`max1 === max2 :`, max1 === max2);
+// const max = BigInt(Number.MAX_SAFE_INTEGER);
+// console.log(`max:`, max);
+// const max1 = max + 1n;
+// const max2 = max + 2n;
+// console.log(`max1:`, max1);
+// console.log(`max2:`, max2);
+// console.log(`max1 === max2 :`, max1 === max2);
 
-declare let num: number;
-declare let big: bigint;
+// declare let num: number;
+// declare let big: bigint;
 // num = big; // 不能将类型“bigint”分配给类型“number”。ts(2322)
 // big = num; // 不能将类型“number”分配给类型“bigint”。ts(2322)
 
