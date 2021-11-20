@@ -6,7 +6,6 @@
 //   Right,
 // }
 // console.log(`Direction:`, Direction);
-
 // console.log(`Direction[100]:`, Direction[100]);
 // console.log(`Direction[101]:`, Direction[101]);
 // console.log(`Direction[102]:`, Direction[102]);
@@ -38,7 +37,6 @@
 //   NO = 0,
 //   YES = 'yes',
 // }
-
 // console.log(`Egnum`, Egnum);
 // console.log('----------------------------------');
 // console.log(`Egnum[0]:`, Egnum[0])
@@ -94,14 +92,12 @@ console.log(Direction.Right === 103);
 
 
 // 常量枚举
-
 // const enum Direction {
 //   Up = 'u',
 //   Down = 'd',
 //   Left = 'l',
 //   Right = 'r',
 // }
-
 // console.log(`Direction['Up']:`, Direction['Up']);
 // const aaa = Direction['Up'];
 // console.log(`aaa:`, aaa);
@@ -153,7 +149,6 @@ console.log("Direction1 001:", Direction1);
 
 
 // 枚举成员类型
-
 // enum Direction {
 //   Up,
 //   Down,
