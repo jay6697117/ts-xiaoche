@@ -16,6 +16,7 @@
 // console.log(`Direction['Left']:`, Direction['Left']);
 // console.log(`Direction['Right']:`, Direction['Right']);
 
+
 // 字符串枚举
 // enum Direction1 {
 //   Up = 'u',
@@ -31,6 +32,7 @@
 // console.log(`Direction1['Right']:`, Direction1['Right']);
 // console.log('----------------------------------');
 
+
 // 异构枚举
 // enum Egnum {
 //   NO = 0,
@@ -42,6 +44,7 @@
 // console.log(`Egnum[0]:`, Egnum[0])
 // console.log(`Egnum['NO']:`, Egnum['NO'])
 // console.log(`Egnum['YES']:`, Egnum['YES'])
+
 
 // 反向映射
 // enum Direction {
@@ -55,6 +58,7 @@
 // // console.log(Direction.Down === 1); // true
 // // console.log(Direction.Left === 2); // true
 // // console.log(Direction.Right === 3); // true
+
 
 // 枚举的本质
 /*
@@ -87,6 +91,7 @@ console.log(Direction.Left === 102);
 console.log(Direction.Right === 103);
 */
 // 我们可以把枚举类型看成一个JavaScript对象，而由于其特殊的构造，导致其拥有正反向同时映射的特性。
+
 
 // 常量枚举
 
@@ -145,6 +150,7 @@ var Direction1;
 console.log("Direction 000:", Direction);
 console.log("Direction1 001:", Direction1);
 */
+
 
 // 枚举成员类型
 
