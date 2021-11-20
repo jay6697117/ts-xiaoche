@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    // "target": "es5", // 指定 ECMAScript 目标版本: 'ES5'
-    "target": "ESNext", // 指定 ECMAScript 目标版本: 'ES5'
+    "preserveConstEnums": true, // 要 TypeScript 保留对象 Direction
+    "target": "es5", // 指定 ECMAScript 目标版本: 'ES5'
+    // "target": "ESNext", // 指定 ECMAScript 目标版本: 'ESNext'
     "module": "commonjs", // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
     "moduleResolution": "node", // 选择模块解析策略
     "experimentalDecorators": true, // 启用实验性的ES装饰器

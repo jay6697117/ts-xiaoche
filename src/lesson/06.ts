@@ -56,7 +56,6 @@
 // // console.log(Direction.Left === 2); // true
 // // console.log(Direction.Right === 3); // true
 
-
 // 枚举的本质
 /*
 "use strict";
@@ -90,3 +89,25 @@ console.log(Direction.Right === 103);
 // 我们可以把枚举类型看成一个JavaScript对象，而由于其特殊的构造，导致其拥有正反向同时映射的特性。
 
 // 常量枚举
+
+const enum Direction {
+  Up = 'u',
+  Down = 'd',
+  Left = 'l',
+  Right = 'r',
+}
+
+console.log(`Direction['Up']:`, Direction['Up']);
+const aaa = Direction['Up'];
+console.log(`aaa:`, aaa);
+
+/*
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log("Direction['Up']:", "u");
+var aaa = "u";
+console.log("aaa:", aaa);
+//# sourceMappingURL=06.js.map
+*/
+
+export {};

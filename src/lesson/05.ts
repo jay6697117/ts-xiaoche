@@ -71,3 +71,5 @@ value = tup;
 console.log(`value 003:`, value);
 
 // 普通对象、枚举、数组、元组通通都是 object 类型;
+
+export {};

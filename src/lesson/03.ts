@@ -4,3 +4,4 @@ function greeter(person: string): string {
 
 const user = 'Jane User';
 console.log(greeter(user));
+export {};

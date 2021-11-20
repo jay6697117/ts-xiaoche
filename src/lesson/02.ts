@@ -20,3 +20,4 @@ const res1 = foo.fn('123');
 console.log(`res1:`, res1);
 const res2 = bar.fn('456');
 console.log(`res2:`, res2);
+export {};
