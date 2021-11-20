@@ -90,16 +90,16 @@ console.log(Direction.Right === 103);
 
 // 常量枚举
 
-const enum Direction {
-  Up = 'u',
-  Down = 'd',
-  Left = 'l',
-  Right = 'r',
-}
+// const enum Direction {
+//   Up = 'u',
+//   Down = 'd',
+//   Left = 'l',
+//   Right = 'r',
+// }
 
-console.log(`Direction['Up']:`, Direction['Up']);
-const aaa = Direction['Up'];
-console.log(`aaa:`, aaa);
+// console.log(`Direction['Up']:`, Direction['Up']);
+// const aaa = Direction['Up'];
+// console.log(`aaa:`, aaa);
 
 /*
 "use strict";
@@ -109,5 +109,63 @@ var aaa = "u";
 console.log("aaa:", aaa);
 //# sourceMappingURL=06.js.map
 */
+
+// enum Direction {
+//   Up,
+//   Down,
+//   Left,
+//   Right
+// }
+// enum Direction1 {
+//   Up = -1,
+//   Down = -2,
+//   Left = -3,
+//   Right = -4,
+// }
+// console.log(`Direction 000:`, Direction)
+// console.log(`Direction1 001:`, Direction1)
+
+/*
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 0] = "Up";
+    Direction[Direction["Down"] = 1] = "Down";
+    Direction[Direction["Left"] = 2] = "Left";
+    Direction[Direction["Right"] = 3] = "Right";
+})(Direction || (Direction = {}));
+var Direction1;
+(function (Direction1) {
+    Direction1[Direction1["Up"] = -1] = "Up";
+    Direction1[Direction1["Down"] = -2] = "Down";
+    Direction1[Direction1["Left"] = -3] = "Left";
+    Direction1[Direction1["Right"] = -4] = "Right";
+})(Direction1 || (Direction1 = {}));
+console.log("Direction 000:", Direction);
+console.log("Direction1 001:", Direction1);
+*/
+
+// 枚举成员类型
+
+enum Direction {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+const a = 0;
+
+console.log(a === Direction.Up); // true
+
+type c = 0;
+
+declare let b: c;
+console.log(`b:`, b);
+
+// b = 1 // 不能将类型“1”分配给类型“0”
+b = 0;
+b = Direction.Up; // ok
 
 export {};
