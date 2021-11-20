@@ -148,23 +148,28 @@ console.log("Direction1 001:", Direction1);
 
 // 枚举成员类型
 
-enum Direction {
-  Up,
-  Down,
-  Left,
-  Right,
-}
+// enum Direction {
+//   Up,
+//   Down,
+//   Left,
+//   Right,
+// }
 
-console.log(`Direction:`, Direction)
-// const a = 0;
-// console.log(a === Direction.Up); // true
+// console.log(`Direction:`, Direction)
+// // const a = 0;
+// // console.log(a === Direction.Up); // true
 
-type c = 0;
+// type c = 0;
 
-declare let b: c;
+// declare let b: c;
 
-// b = 1 // 不能将类型“1”分配给类型“0”
-b = 0;
-b = Direction.Up; // ok
+// // b = 1 // 不能将类型“1”分配给类型“0”
+// b = 0;
+// b = Direction.Up; // ok
+
+
+// 联合枚举类型
+
+
 
 export {};
