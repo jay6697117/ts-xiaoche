@@ -155,14 +155,13 @@ enum Direction {
   Right,
 }
 
-const a = 0;
-
-console.log(a === Direction.Up); // true
+console.log(`Direction:`, Direction)
+// const a = 0;
+// console.log(a === Direction.Up); // true
 
 type c = 0;
 
 declare let b: c;
-console.log(`b:`, b);
 
 // b = 1 // 不能将类型“1”分配给类型“0”
 b = 0;
