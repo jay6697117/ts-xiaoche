@@ -15,7 +15,6 @@
 // console.log(`Direction['Left']:`, Direction['Left']);
 // console.log(`Direction['Right']:`, Direction['Right']);
 
-
 // 字符串枚举
 // enum Direction1 {
 //   Up = 'u',
@@ -31,7 +30,6 @@
 // console.log(`Direction1['Right']:`, Direction1['Right']);
 // console.log('----------------------------------');
 
-
 // 异构枚举
 // enum Egnum {
 //   NO = 0,
@@ -42,7 +40,6 @@
 // console.log(`Egnum[0]:`, Egnum[0])
 // console.log(`Egnum['NO']:`, Egnum['NO'])
 // console.log(`Egnum['YES']:`, Egnum['YES'])
-
 
 // 反向映射
 // enum Direction {
@@ -56,7 +53,6 @@
 // // console.log(Direction.Down === 1); // true
 // // console.log(Direction.Left === 2); // true
 // // console.log(Direction.Right === 3); // true
-
 
 // 枚举的本质
 /*
@@ -89,7 +85,6 @@ console.log(Direction.Left === 102);
 console.log(Direction.Right === 103);
 */
 // 我们可以把枚举类型看成一个JavaScript对象，而由于其特殊的构造，导致其拥有正反向同时映射的特性。
-
 
 // 常量枚举
 // const enum Direction {
@@ -147,7 +142,6 @@ console.log("Direction 000:", Direction);
 console.log("Direction1 001:", Direction1);
 */
 
-
 // 枚举成员类型
 // enum Direction {
 //   Up,
@@ -156,21 +150,53 @@ console.log("Direction1 001:", Direction1);
 //   Right,
 // }
 
-// console.log(`Direction:`, Direction)
+// console.log(`Direction:`, Direction);
 // // const a = 0;
 // // console.log(a === Direction.Up); // true
 
 // type c = 0;
+// // declare let b: c;
+// // console.log(`c:`, c); // “c”仅表示类型，但在此处却作为值使用
+// let b: c;
 
-// declare let b: c;
-
-// // b = 1 // 不能将类型“1”分配给类型“0”
+// // b = 1 // 不能将类型“1”分配给类型“0”。
+// // console.log(`b 0:`, b);
 // b = 0;
+// console.log(`b 1:`, b);
 // b = Direction.Up; // ok
-
+// console.log(`b 2:`, b);
 
 // 联合枚举类型
 
+enum Direction {
+  Up = 100,
+  Down,
+  Left,
+  Right,
+}
+console.log(`Direction 0:`, Direction);
 
+enum Animal {
+  Dog = '狗',
+  Cat = '猫'
+}
+console.log(`Animal 0:`, Animal);
+
+// declare let a: Direction;
+let a: Direction;
+// let a: Animal;
+
+a = Direction['Up'];
+console.log(`a 1:`, a);
+a = Direction['Down'];
+console.log(`a 2:`, a);
+a = Direction['Left'];
+console.log(`a 3:`, a);
+a = Direction['Right'];
+console.log(`a 3:`, a);
+// a= Animal['Dog'];// 不能将类型“Animal.Dog”分配给类型“Direction”
+// console.log(`a 2:`, a);
+
+// 我们把 a 声明为 Direction 类型，可以看成我们声明了一个联合类型 Direction.Up | Direction.Down | Direction.Left | Direction.Right，只有这四个类型其中的成员才符合要求。
 
 export {};
