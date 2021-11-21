@@ -168,35 +168,70 @@ console.log("Direction1 001:", Direction1);
 
 // 联合枚举类型
 
-enum Direction {
-  Up = 100,
-  Down,
-  Left,
-  Right,
-}
-console.log(`Direction 0:`, Direction);
+// enum Direction {
+//   Up = 100,
+//   Down,
+//   Left,
+//   Right,
+// }
+// console.log(`Direction 0:`, Direction);
 
-enum Animal {
-  Dog = '狗',
-  Cat = '猫'
-}
-console.log(`Animal 0:`, Animal);
+// enum Animal {
+//   Dog = '狗',
+//   Cat = '猫'
+// }
+// console.log(`Animal 0:`, Animal);
 
-// declare let a: Direction;
-let a: Direction;
-// let a: Animal;
+// // declare let a: Direction;
+// let a: Direction;
+// // let a: Animal;
 
-a = Direction['Up'];
-console.log(`a 1:`, a);
-a = Direction['Down'];
-console.log(`a 2:`, a);
-a = Direction['Left'];
-console.log(`a 3:`, a);
-a = Direction['Right'];
-console.log(`a 3:`, a);
-// a= Animal['Dog'];// 不能将类型“Animal.Dog”分配给类型“Direction”
+// a = Direction['Up'];
+// console.log(`a 1:`, a);
+// a = Direction['Down'];
 // console.log(`a 2:`, a);
+// a = Direction['Left'];
+// console.log(`a 3:`, a);
+// a = Direction['Right'];
+// console.log(`a 4:`, a);
+// a = 104;
+// console.log(`a 5:`, a);
+// // a= Animal['Dog'];// 不能将类型“Animal.Dog”分配给类型“Direction”
+// // console.log(`a 2:`, a);
 
-// 我们把 a 声明为 Direction 类型，可以看成我们声明了一个联合类型 Direction.Up | Direction.Down | Direction.Left | Direction.Right，只有这四个类型其中的成员才符合要求。
+// // 我们把 a 声明为 Direction 类型，可以看成我们声明了一个联合类型 Direction.Up | Direction.Down | Direction.Left | Direction.Right，只有这四个类型其中的成员才符合要求。
+
+// 枚举合并
+enum Direction {
+  Up = 'u',
+  Down = 'd',
+  Left = 'l',
+  Right = 'r',
+}
+
+// console.log(`Direction`, Direction);
+
+enum Direction {
+  Center = 1,
+}
+
+/*
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+
+var Direction;
+
+(function (Direction) {
+    Direction["Up"] = "u";
+    Direction["Down"] = "d";
+    Direction["Left"] = "l";
+    Direction["Right"] = "r";
+})(Direction || (Direction = {}));
+(function (Direction) {
+    Direction[Direction["Center"] = 1] = "Center";
+})(Direction || (Direction = {}));
+//# sourceMappingURL=06.js.map
+*/
 
 export {};
