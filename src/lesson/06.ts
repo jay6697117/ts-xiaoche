@@ -202,18 +202,57 @@ console.log("Direction1 001:", Direction1);
 // // 我们把 a 声明为 Direction 类型，可以看成我们声明了一个联合类型 Direction.Up | Direction.Down | Direction.Left | Direction.Right，只有这四个类型其中的成员才符合要求。
 
 // 枚举合并
+/*
 enum Direction {
   Up = 'u',
   Down = 'd',
   Left = 'l',
   Right = 'r',
 }
-
-// console.log(`Direction`, Direction);
-
 enum Direction {
   Center = 1,
 }
+console.log(`Direction`, Direction);
+// 上面 两个枚举会合并
+*/
+
+// 为枚举添加静态方法
+enum Month {
+  January,
+  February,
+  March,
+  April,
+  May,
+  June,
+  July,
+  August,
+  September,
+  October,
+  November,
+  December,
+}
+console.log(`Month 0:`, Month);
+
+const isSummer = (month: Month) => {
+  switch (month) {
+    case Month.June:
+      return true;
+    case Month.July:
+      return true;
+    case Month.August:
+      return true;
+    default:
+      return false;
+  }
+};
+// console.log(`isSummer:`, isSummer);
+
+namespace Month {
+  export const foo = isSummer;
+}
+console.log(`Month 1:`, Month);
+
+console.log(Month.foo(Month.June)); // false
 
 /*
 "use strict";
@@ -234,4 +273,4 @@ var Direction;
 //# sourceMappingURL=06.js.map
 */
 
-export {};
+export { Month };

@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "preserveConstEnums": true, // 要 TypeScript 保留对象 Direction
-    "target": "es5", // 指定 ECMAScript 目标版本: 'ES5'
-    // "target": "ESNext", // 指定 ECMAScript 目标版本: 'ESNext'
-    "module": "commonjs", // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
+    // "target": "es5", // 指定 ECMAScript 目标版本: 'ES5'
+    "target": "ESNext", // 指定 ECMAScript 目标版本: 'ESNext'
+    // "module": "commonjs", // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
+    "module": "ESNext",
     "moduleResolution": "node", // 选择模块解析策略
     "experimentalDecorators": true, // 启用实验性的ES装饰器
     "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。
