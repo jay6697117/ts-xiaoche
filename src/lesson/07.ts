@@ -46,7 +46,7 @@ let mySquare1 = CalculateAreas({});
 console.log(`mySquare1:`, mySquare1); */
 
 // 可索引类型
-interface Phone {
+/* interface Phone {
   [prop: string]: string;
 }
 interface User {
@@ -66,8 +66,39 @@ const user: User = {
 
 console.log(`user:`, user);
 console.log(`user.phone:`, user.phone)
-console.log(user.sayHi('张金辉'));
+console.log(user.sayHi('张金辉')); */
+interface User {
+  name: string;
+  age?: number; //可选属性
+  readonly isMale: boolean; //只读属性
+}
+interface SuperUser {
+  superFn: (param: string) => string;
+}
 
+interface VipUser extends User, SuperUser {
+  vipFn: (param: string) => string;
+}
+
+const viper: VipUser = {
+  name: '默认用户',
+  age: 33, //可选项
+  isMale: false,
+  vipFn: function (param: string) {
+    this.name = param;
+    return `${this.name} is vip user`;
+  },
+  superFn: function (param: string) {
+    this.name = param;
+    return `${this.name} is super user`;
+  },
+};
+
+console.log(`viper 00:`, viper);
+console.log(viper.vipFn('张金辉'));
+console.log(`viper 01:`, viper);
+console.log(viper.superFn('袁婷婷'));
+console.log(`viper 02:`, viper);
 
 // 默认导出模块
 export {};
