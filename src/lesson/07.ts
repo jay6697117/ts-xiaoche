@@ -65,7 +65,7 @@ const user: User = {
 };
 
 console.log(`user:`, user);
-console.log(user.phone);
+console.log(`user.phone:`, user.phone)
 console.log(user.sayHi('张金辉'));
 
 
