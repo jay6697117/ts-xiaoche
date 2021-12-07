@@ -7,6 +7,7 @@ console.dir(A);
 console.log(A.p)
 */
 
+
 /*
 // 2.0 抽象类
 abstract class Animal {
@@ -67,4 +68,4 @@ const raceCar = new RaceCar();
 */
 
 
-// class 可以作为接口
+// 4.0 class 可以作为接口
