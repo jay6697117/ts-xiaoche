@@ -69,3 +69,6 @@ const raceCar = new RaceCar();
 
 
 // 4.0 class 可以作为接口
+export default  class Carousel extends React.Component<Props, State> {};
+
+export {};

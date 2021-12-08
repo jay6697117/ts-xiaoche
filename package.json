@@ -38,6 +38,9 @@
     "@typescript-eslint/parser": "^2.3.2",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "redux": "^4.0.4"
   }
 }
