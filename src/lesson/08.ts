@@ -7,7 +7,6 @@ console.dir(A);
 console.log(A.p)
 */
 
-
 /*
 // 2.0 抽象类
 abstract class Animal {
@@ -34,7 +33,6 @@ cat.move('run run run cat !!!');
 // 默认导出模块
 export {};
 */
-
 
 /*
 // 3.0 访问限定符
@@ -67,8 +65,8 @@ console.log('----------------');
 const raceCar = new RaceCar();
 */
 
-
 // 4.0 class 可以作为接口
-export default  class Carousel extends React.Component<Props, State> {};
+// export default class Carousel extends React.Component<Props, State> {}
 
+// 默认导出模块
 export {};

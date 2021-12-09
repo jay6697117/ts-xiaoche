@@ -52,11 +52,11 @@
 enum Direction {
   Center = 1,
 }
-console.log(`typeof Direction:`, typeof Direction)
+console.log(`typeof Direction:`, typeof Direction);
 let obj: object = {};
-console.log(`typeof obj:`, typeof obj)
+console.log(`typeof obj:`, typeof obj);
 let arr: number[] = [1, 2, 3];
-console.log(`typeof arr:`, typeof arr)
+console.log(`typeof arr:`, typeof arr);
 let tup: [number, string] = [88, 'hello'];
 console.log(`typeof tup:`, typeof tup);
 

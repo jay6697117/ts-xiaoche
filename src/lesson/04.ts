@@ -30,7 +30,6 @@
 // num = big; // 不能将类型“bigint”分配给类型“number”。ts(2322)
 // big = num; // 不能将类型“number”分配给类型“bigint”。ts(2322)
 
-
 /*
 小结
 我们总结一下 TypeScript 中的原始类型：
