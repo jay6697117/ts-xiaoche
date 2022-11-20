@@ -74,5 +74,5 @@ function reverseFn(x: number | string): n | s | void {
         return x.split('').reverse().join('');
     }
 }
-console.log(reverseFn(123))
-console.log(reverseFn('hello'))
+// console.log(reverseFn(123))
+// console.log(reverseFn('hello'))
